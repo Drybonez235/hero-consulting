@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /*
+  The main corporate identity color. Used for logos, primary buttons, and key headers.
+  Hex: #004AAD
+  */
+   --color-brand-primary-navy: #004AAD;/* RGB for 004AAD */
+
+  /*
+  A darker, more serious shade for backgrounds, footers, or deep shadows.
+  Hex: #003366
+  */
+  --color-brand-executive-dark: #003366;
+
+  /*
+  A balanced, vibrant blue suitable for link text, secondary buttons, or large UI elements.
+  Hex: #1A73E8
+  */
+  --color-brand-standard-link: #1A73E8;
+
+  /*
+  A bright accent color used sparingly for calls-to-action, badges, or highlighting.
+  Hex: #4285F4
+  */
+  --color-brand-action-accent: #4285F4;
+
+  /*
+  A very light, subtle blue for backgrounds, hover states, or card borders.
+  Hex: #E8F0FE
+  */
+  --color-brand-background-subtle: #E8F0FE;
+
+  /*
+  A slightly teal-tinged blue for contrast when paired with the navy primary color.
+  Hex: #0073B7
+  */
+  --color-brand-contrast-teal: #0073B7;
+}
