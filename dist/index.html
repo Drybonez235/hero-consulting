@@ -45,14 +45,14 @@
     
 
     
-  <link rel="stylesheet" crossorigin href="/assets/main-BBAJKiUN.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-D44Xq_eM.css">
 </head>
 
 <body class="antialiased bg-white font-[Tinos]">
     
 <nav class=" bg-gradient-to-br from-brand-blue to-blue-400 border-t-1 shadow-md">
         <div class="flex justify-between items-center h-25">
-                    <div class="flex items-center space-x-2 text-xl ml-5 font-bold text-white tracking-wider">
+                    <div class="flex items-center space-x-1 md:space-x-2 text-xl ml-5 font-bold text-white tracking-wider">
                        <img src="H.E.R.O-logo-white-background.png" class="h-25 py-2">
                         <span class=" text-4xl font-[Tinos]">H.E.R.O <br><span class="text-white">Consulting Group</span></span>
                     </div>
@@ -98,16 +98,15 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
 
         <!-- Left Column: Big Text Content (50% width on desktop) -->
-        <div class="flex-1 md:w-1/2 text-center md:text-left space-y-8">
+        <div class="flex-1 text-center md:text-left space-y-8">
             <!-- Hero Headline -->
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tighter text-gray-900">
-                Empower your team to lead with confidence.
-            
+            <h1 id="hero-sentence" class="text-4xl sm:text-6xl h-40 lg:text-6xl font-extrabold leading-tight tracking-tighter text-gray-900">
+                Empower your <span id="word" class="inline-block md:w-40 "></span> <br>to lead with confidence. 
             </h1>
 
             <!-- Subheading -->
-            <p class="mt-4 text-2xl text-gray-600 max-w-lg md:max-w-none mx-auto">
-                We believe humans are key in driving performance. Give them the tools and knowledge to unlock their potential.
+            <p class="mt-2 text-2xl text-gray-600 max-w-lg md:max-w-none mx-auto">
+                Empowered humans create extraordinary outcomes. We ignite potential through insight, guidance, and growth.
             </p>
 
             <!-- Call to Action (CTA) Buttons -->
@@ -146,6 +145,24 @@
         <!-- 3-Column Grid for Services -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
+             <!-- Service 3: Title & Description -->
+            <div class="p-6 bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+                <!-- Icon Placeholder -->
+                <div class="flex justify-center mb-4">
+                    <div class="p-3 bg-brand-blue-alt rounded-full">
+                    <img src="shake-hands-svgrepo-com.png" class="w-6 h-6">
+                    </div>
+                </div>
+                <!-- Semi-Big Words -->
+                <h3 class="text-3xl font-bold text-gray-900 mb-3">
+                    Communication
+                </h3>
+                <!-- Regular Sized Text -->
+                <p class="text-xl text-gray-600">
+                    Communication is essential to overcoming obstacles. We give people the confidence to communicate effectively.
+                </p>
+            </div>
+
             <!-- Service 1: Title & Description -->
             <div class="p-6 bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
                 <!-- Icon Placeholder -->
@@ -156,11 +173,11 @@
                 </div>
                 <!-- Semi-Big Words -->
                 <h3 class="text-3xl font-bold text-gray-900 mb-3">
-                    Leadership Cultivation
+                    Leadership Development
                 </h3>
                 <!-- Regular Sized Text -->
                 <p class="text-xl text-gray-600">
-                    We deliver the knowledge that allows your employees to define and hone their leadership style.
+                    Everyone should strive to be a leader. We help people find and define their leadership style.
                 </p>
             </div>
 
@@ -178,27 +195,10 @@
                 </h3>
                 <!-- Regular Sized Text -->
                 <p class="text-xl text-gray-600">
-                    Help your employees implement tools and proccesses that enhance communication.
+                    Resources enhance our innate abilities. We lead people in finding and utilizing the tools that work for them.
                 </p>
             </div>
 
-            <!-- Service 3: Title & Description -->
-            <div class="p-6 bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
-                <!-- Icon Placeholder -->
-                <div class="flex justify-center mb-4">
-                    <div class="p-3 bg-brand-blue-alt rounded-full">
-                    <img src="shake-hands-svgrepo-com.png" class="w-6 h-6">
-                    </div>
-                </div>
-                <!-- Semi-Big Words -->
-                <h3 class="text-3xl font-bold text-gray-900 mb-3">
-                    Team Collaboration
-                </h3>
-                <!-- Regular Sized Text -->
-                <p class="text-xl text-gray-600">
-                    Discover and hone project managment frameworks that foster better collaboration among teams in your organization.
-                </p>
-            </div>
         </div>
     </div>
 </section>
@@ -297,6 +297,116 @@
         </div>
     </div>
 </section>
+<script>
+        // Set up the dynamic hero text animation
+        let heroSentenceEl = document.getElementById('word');
+        // The base parts of the sentence
+        //const PREFIX = "Empower your ";
+        const PREFIX = "";
+        //const SUFFIX = " to lead with confidence.";
+        const SUFFIX = "";
+        // The words to cycle through
+        const WORDS = ['team', 'students', 'employees'];
+        // The final, static sentence
+        const FINAL_SENTENCE = "Empower everyone to lead with confidence.";
+        // Animation timing in milliseconds
+        const TYPING_DELAY = 90;
+        const ERASING_DELAY = 60;
+        const WORD_PAUSE = 1000;
+        const FINAL_PAUSE = 2000;
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isTyping = true;
+        let isFinal = false;
+
+        // Function to update the text content
+        function updateText(text) {
+            
+            // Check if we are in the final state, which shouldn't show the blinking cursor
+            if (isFinal) {
+                heroSentenceEl = document.getElementById("hero-sentence");
+                heroSentenceEl.textContent = text;
+                heroSentenceEl.style.color = '#0d3291'; // Change color for emphasis
+                // Remove the blinking cursor using CSS class manipulation
+                heroSentenceEl.classList.remove('typing-cursor'); 
+                // const cursorStyle = document.createElement('style');
+                // cursorStyle.id = 'cursor-style';
+                // cursorStyle.textContent = '#hero-sentence::after { content: none !important; }';
+               // document.head.appendChild(cursorStyle);
+            } else {
+                heroSentenceEl.textContent = text;
+            }
+        }
+
+        // The main animation loop
+        function animateLoop() {
+            const currentWord = WORDS[wordIndex];
+            
+            if (isTyping) {
+                // --- TYPING PHASE ---
+                if (charIndex < currentWord.length) {
+                    charIndex++;
+                    const typedPart = currentWord.substring(0, charIndex);
+                    updateText(PREFIX + typedPart + SUFFIX);
+
+                    setTimeout(animateLoop, TYPING_DELAY);
+                } else {
+                    // Word is fully typed, pause
+                    isTyping = false;
+                    setTimeout(animateLoop, WORD_PAUSE);
+                }
+            } else {
+                // --- ERASING PHASE ---
+                if (charIndex > 0) {
+                    charIndex--;
+                    const erasedPart = currentWord.substring(0, charIndex);
+                    updateText(PREFIX + erasedPart + SUFFIX);
+                    setTimeout(animateLoop, ERASING_DELAY);
+                } else {
+                    // Word is fully erased, move to the next word or final state
+                    isTyping = true;
+                    wordIndex++;
+
+                    if (wordIndex < WORDS.length) {
+                        // Start typing the next word
+                        setTimeout(animateLoop, TYPING_DELAY);
+                    } else {
+                        // All words cycled, transition to the final sentence
+                        isFinal = true;
+                        setTimeout(showFinalSentence, TYPING_DELAY);
+                    }
+                }
+            }
+        }
+
+        // Function to smoothly type out the final sentence
+        function showFinalSentence() {
+            let finalCharIndex = 0;
+            const finalTypingDelay = 70; // Slightly faster for the conclusion
+
+            function typeFinal() {
+                if (finalCharIndex <= FINAL_SENTENCE.length) {
+                    const finalPart = FINAL_SENTENCE.substring(0, finalCharIndex);
+                    updateText(finalPart);
+                    finalCharIndex++;
+                    setTimeout(typeFinal, finalTypingDelay);
+                }
+            }
+            // Start the final typing sequence
+            typeFinal();
+        }
+
+        // Start the animation when the window loads
+        window.onload = function() {
+            // Initialize the text to the starting state
+            updateText(PREFIX + WORDS[0] + SUFFIX);
+          updateText(WORDS[0]); 
+            // Set the animation to begin after a brief initial pause
+            setTimeout(animateLoop, FINAL_PAUSE); 
+        };
+
+    </script>
     
 <footer class="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
