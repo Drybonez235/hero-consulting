@@ -48,105 +48,117 @@
     
 </head>
 
-<body class="antialiased bg-white font-[Tinos]">
+<body class="antialiased bg-base-0 font-[Tinos]">
     
-<nav class=" bg-gradient-to-br from-brand-blue to-blue-400 border-t-1 shadow-md">
-        <div class="flex justify-between items-center h-25">
-                    <div class="flex items-center space-x-1 md:space-x-2 text-xl ml-5 font-bold text-white tracking-wider">
-                       <img src="H.E.R.O-logo-white-background.png" class="h-25 py-2">
-                        <span class=" text-4xl font-[Tinos]">H.E.R.O <br><span class="text-white">Consulting Group</span></span>
-                    </div>
-                
-
-                
-                <div class="hidden md:flex md:space-x-4 md:mr-4 font-[Tinos]">
-                    <a href="#" class="nav-link text-white hover:bg-brand-orange hover:text-consulting-accent px-3 py-2 rounded-lg text-2xl font-medium">About</a>
-                    <a href="#" class="nav-link text-white hover:bg-brand-orange hover:text-consulting-accent px-3 py-2 rounded-lg text-2xl font-medium">Services</a>
-                    <a href="#" class="nav-link text-white hover:bg-brand-orange hover:text-consulting-accent px-3 py-2 rounded-lg text-2xl font-medium">Resources</a>
-                    <a href="#" class="nav-link text-white hover:bg-brand-orange hover:text-consulting-accent px-3 py-2 rounded-lg text-2xl font-medium">Contact</a>
-                </div>
-
-                
-                <div class="md:hidden">
-                    <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-lg text-white hover:text-white hover:bg-consulting-accent/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition duration-150 ease-in-out" aria-expanded="false">
-                        
-                        <svg id="menu-icon-closed" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                        
-                        <svg id="menu-icon-open" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+<nav class="bg-gradient-to-br from-brand-blue to-blue-300 text-base-0">
+    <div class="mx-auto flex items-center justify-between py-2 px-16">
 
         
-        <div class="md:hidden hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-consulting-dark/95">
-                <a href="#" class="block nav-link text-white hover:bg-consulting-accent/20 hover:text-consulting-accent rounded-md px-3 py-2 text-base font-medium">About</a>
-                <a href="#" class="block nav-link text-white hover:bg-consulting-accent/20 hover:text-consulting-accent rounded-md px-3 py-2 text-base font-medium">Services</a>
-                <a href="#" class="block nav-link text-white hover:bg-consulting-accent/20 hover:text-consulting-accent rounded-md px-3 py-2 text-base font-medium">Contact</a>
-            </div>
+        <div class="flex items-center gap-3 font-bold tracking-wide">
+            <img src="H.E.R.O-logo-white-background.png" class="w-18 lg:w-1/4 ml-4">
+            <span class="text-xl md:text-2xl font-[Tinos] leading-tight">
+                H.E.R.O <br>
+                <span class="font-bold">Consulting Group</span>
+            </span>
         </div>
-    </nav>
+
+        
+        <div class="hidden md:flex items-center gap-6 lg:gap-10 font-[Tinos] text-lg">
+            <a href="#" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+                About
+            </a>
+            <a href="#" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+                Programs
+            </a>
+            <a href="#" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+                Resources
+            </a>
+
+            
+            <a href="#"
+               class="ml-4 px-2 lg:px-6 py-2 font-semibold bg-brand-orange text-white rounded-xl shadow-md border-2 border-brand-orange
+                      hover:bg-brand-orange-alt transition duration-300 ease-in-out">
+               Contact
+            </a>
+        </div>
+
+        
+        <details class="md:hidden relative">
+            <summary aria-label="Toggle navigation menu"
+                     class="list-none cursor-pointer p-2 rounded-lg hover:bg-blue-600 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </summary>
+
+            <div class="absolute right-0 mt-2 w-56 bg-white text-gray-800 rounded-lg shadow-xl z-50 overflow-hidden">
+                <a href="#" class="block px-4 py-3 text-lg font-medium hover:bg-gray-100 border-b border-gray-200">
+                    About
+                </a>
+                <a href="#" class="block px-4 py-3 text-lg font-medium hover:bg-gray-100 border-b border-gray-200">
+                    Programs
+                </a>
+                <a href="#" class="block px-4 py-3 text-lg font-medium hover:bg-gray-100 border-b border-gray-200">
+                    Resources
+                </a>
+                <a href="#" class="block px-4 py-3 text-lg font-medium hover:bg-gray-100 border-b border-gray-200">
+                    Contact Us
+                </a>
+            </div>
+        </details>
+
+    </div>
+</nav>
 
     
   <!-- Hero Section Start -->
 <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-    <!-- Inner Container for max-width and centering -->
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
 
-        <!-- Left Column: Big Text Content (50% width on desktop) -->
-        <div class="flex-1 text-center md:text-left space-y-8">
-            <!-- Hero Headline -->
-            <h1 id="hero-sentence" class="text-4xl sm:text-6xl h-40 lg:text-6xl font-extrabold leading-tight tracking-tighter text-gray-900">
+        <div class="flex-1 text-center md:text-left flex flex-col">
+            <h1 id="hero-sentence" class="font-extrabold text-4xl/10 md:5xl/15 text-gray-900">
                 Empower your <span id="word" class="inline-block md:w-40 "></span> <br>to lead with confidence. 
             </h1>
 
-            <!-- Subheading -->
-            <p class="mt-2 text-2xl text-gray-600 max-w-lg md:max-w-none mx-auto">
+            <p class="text-2xl text-gray-800 max-w-lg md:max-w-none mx-auto my-4 md:my-2">
                 Empowered humans create extraordinary outcomes. We ignite potential through insight, guidance, and growth.
             </p>
 
-            <!-- Call to Action (CTA) Buttons -->
-            <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4">
-                <button class="px-8 py-3 text-2xl font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-lg">
+            <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2 md:pt-4 text-xl">
+                <button class="px-8 py-3 font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-md">
                     Learn More
                 </button>
-                <button class="px-8 py-3 text-2xl font-semibold text-brand-orange bg-white border border-brand-orange hover:bg-base-100 rounded-xl shadow-md transition duration-300 ease-in-out">
+                <button class="px-8 py-3 font-semibold text-brand-orange bg-white border border-brand-orange hover:bg-base-100 rounded-xl shadow-sm transition duration-300 ease-in-out">
                     Contact Us
                 </button>
             </div>
         </div>
 
-        <!-- Right Column: Image Spot (50% width on desktop) -->
-        <div class="flex-1 w-full mt-12 md:mt-0">
-            <!-- Image Placeholder Div -->
+        <div class="flex-1 w-full mt-6 md:mt-0">
             <div class="rounded-3xl shadow-2xl">
-                <img src="corporate-team-meeting-stockcake.jpg" class="">
-                    
+                <img src="hero-consulting-new-york-sales-enablement.jpg" class="rounded-lg">
             </div>
         </div>
 
     </div>
 </section>
 
-<section class="py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-base-50">
+<section class="py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-blue-50">
     <div class="max-w-7xl mx-auto text-center">
         <!-- Section Header -->
-        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+        <h2 class="font-extrabold text-2xl mb-4">
             What we Deliver
         </h2>
-        <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p class=" text-gray-800 mb-12 max-w-3xl mx-auto text-2xl">
             We empower your employees through the following:
         </p>
 
         <!-- 3-Column Grid for Services -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-2xl">
 
              <!-- Service 3: Title & Description -->
-            <div class="p-6 bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+            <div class="p-6 bg-base-0 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
                 <!-- Icon Placeholder -->
                 <div class="flex justify-center mb-4">
                     <div class="p-3 bg-brand-blue-alt rounded-full">
@@ -154,17 +166,17 @@
                     </div>
                 </div>
                 <!-- Semi-Big Words -->
-                <h3 class="text-3xl font-bold text-gray-900 mb-3">
+                <h3 class="font-bold text-base-800 mb-3">
                     Communication
                 </h3>
                 <!-- Regular Sized Text -->
-                <p class="text-xl text-gray-600">
+                <p class="text-2xl text-gray-600">
                     Communication is essential to overcoming obstacles. We give people the confidence to communicate effectively.
                 </p>
             </div>
 
             <!-- Service 1: Title & Description -->
-            <div class="p-6 bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+            <div class="p-6 bg-base-0 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
                 <!-- Icon Placeholder -->
                 <div class="flex justify-center mb-4">
                     <div class="p-3 bg-brand-blue-alt rounded-full">
@@ -172,17 +184,17 @@
                     </div>
                 </div>
                 <!-- Semi-Big Words -->
-                <h3 class="text-3xl font-bold text-gray-900 mb-3">
+                <h3 class=" font-bold text-gray-900 mb-3">
                     Leadership Development
                 </h3>
                 <!-- Regular Sized Text -->
-                <p class="text-xl text-gray-600">
+                <p class=" text-gray-600">
                     Everyone should strive to be a leader. We help people find and define their leadership style.
                 </p>
             </div>
 
             <!-- Service 2: Title & Description -->
-            <div class="p-6 bg-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
+            <div class="p-6 bg-base-0 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 transform hover:-translate-y-1 border border-indigo-100">
                 <!-- Icon Placeholder -->
                 <div class="flex justify-center mb-4">
                     <div class="p-3 bg-brand-blue-alt rounded-full">
@@ -190,11 +202,11 @@
                     </div>
                 </div>
                 <!-- Semi-Big Words -->
-                <h3 class="text-3xl font-bold text-gray-900 mb-3">
+                <h3 class=" font-bold text-gray-900 mb-3">
                 Resource Optimization
                 </h3>
                 <!-- Regular Sized Text -->
-                <p class="text-xl text-gray-600">
+                <p class=" text-gray-600">
                     Resources enhance our innate abilities. We lead people in finding and utilizing the tools that work for them.
                 </p>
             </div>
@@ -206,69 +218,133 @@
 <section class="grid grid-cols-1 md:grid-cols-2 md:py-24 px-4 sm:px-6 lg:px-8">
     
         <!-- Main Header: Mission Statement (Big Text) -->
-        <div class="">
-            <h2 class="text-2xl font-bold text-brand-orange uppercase tracking-wider my-4 md:mb-2 text-center">Our Mission</h2>
-            <p class="text-3xl px-15 md:px-30 font-semibold text-gray-900">
-                To empower individuals and organizations to unlock their full potential, build confidence, and strategically optimize resources for sustainable growth and measurable success.
-            </p>
-            <img src="corporate-team-meeting-stockcake.jpg" class="px-15 md:px-30 mt-6">
-        </div>
+        <div class="my-4 md:mb-2 text-center text-2xl">
+    <h2 class="font-bold text-brand-orange uppercase tracking-wider">Our Mission</h2>
+    <p class="px-16 md:px-32 text-gray-800 text-2xl">
+        To empower individuals and organizations to unlock their full potential, build confidence, and strategically optimize resources for sustainable growth and measurable success.
+    </p>
+    
+    <img class="rounded-lg mx-auto block w-2/3" src="hong-kong-sales-enablement.png">
+</div>
         <!-- 4 Values Grid (2x2 on desktop, stacked on mobile) -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
-          <h2 class="text-2xl font-bold text-brand-orange uppercase tracking-wider mt-4 md:mb-2 text-center md:col-span-2">Our Values</h2> 
+          <h2 class=" font-bold text-brand-orange uppercase tracking-wider mt-4 md:mb-2 text-center md:col-span-2 text-2xl">Our Values</h2> 
             <!-- Value 1: Innovation -->
             <div class="px-6 py-4">
-                <h3 class="text-3xl font-bold text-gray-700">Empowerment</h3>
-                <p class="text-gray-600 text-2xl mt-2">
-                    I believe humans already have everything they need to be successful. I can help you catalyse that potential.
+                <h3 class=" font-bold text-gray-700 text-xl">Empowerment</h3>
+                <p class="text-gray-600  mt-2 text-xl">
+                     We believe humans already have everything they need to be successful. We help you catalyze that potential.
                 </p>
             </div>
 
            
             <div class="px-6 py-4">
-                <h3 class="text-3xl font-bold text-gray-700">Human Focused</h3>
-                <p class="text-gray-600 text-2xl mt-2">
-                    In a world where it seems technology is taking over, I believe that investing in humans will always win over investing in tools. 
+                <h3 class=" font-bold text-gray-700  text-xl">Human Focused</h3>
+                <p class="text-gray-600  mt-2  text-xl">
+                    In a world where it seems technology is taking over, we believe that investing in humans will always win over investing in tools. 
                 </p>
             </div>
 
             <!-- Value 3: User Focus -->
             <div class="px-6 py-4">
-                <h3 class="text-3xl font-bold text-gray-700">Audience Driven</h3>
-                <p class="text-gray-600 text-2xl mt-2">
-                    People are willing to learn and grow given the right environment. My trainigs provide a balance of knowlege and application inspires personal growth.
-                </p>
+                <h3 class=" font-bold text-gray-700  text-xl">Audience Driven</h3>
+                <p class="text-gray-600  mt-2  text-xl">
+                People are willing to learn and grow given the right environment. Our trainings provide a balance of knowledge and application that inspires personal growth.
+            </p>
             </div>
 
             <!-- Value 4: Excellence -->
             <div class="px-6 py-4">
-                <h3 class="text-3xl font-bold text-gray-700">Communication</h3>
-                <p class="text-gray-600 text-2xl mt-2">
-                     Problems always arise from miscommunication. Learning how to communicate between coworkers, managers, and teams drive performence and efficiency. 
-                </p>
+                <h3 class=" font-bold text-gray-700  text-xl">Communication</h3>
+                <p class="text-gray-600  mt-2  text-xl">
+                Problems always arise from miscommunication. Learning how to communicate between coworkers, managers, and teams drive performance and efficiency. 
+            </p>
             </div>
         </div>
         <!-- Call to Action (CTA) Buttons -->
-            <div class="md:col-start-2 md:col-span-2 flex flex-col sm:flex-row justify-center gap-4 md:pt-10 ">
-                <button class="px-8 py-3 text-2xl font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-lg">
+            <div class="md:col-start-2 md:col-span-2 flex flex-col sm:flex-row justify-center md:justify-start md:pl-6 gap-4 lg:gap-16 md:gap-64 py-3 md:pt-10 ">
+                <button class="px-8 py-3 font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-lg">
                     Learn More
                 </button>
-                <button class="px-8 py-3 text-2xl font-semibold text-brand-orange bg-white border border-brand-orange hover:bg-base-100 rounded-xl shadow-md transition duration-300 ease-in-out">
+                <button class="px-8 py-3 font-semibold text-brand-orange bg-white border border-brand-orange hover:bg-base-100 rounded-xl shadow-md transition duration-300 ease-in-out">
                     Contact Us
                 </button>
             </div>
 </section>
 <!-- Mission/Values Section End -->
 
+<section class="bg-blue-50">
+    <div class="py-16 md:py-20 px-2 sm:px-6 lg:px-8 bg-blue-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="font-semibold tracking-tight text-pretty text-gray-700 text-5xl">Impact Programs</h2>
+      <p class="mt-6 text-lg/8 text-gray-600">Choose one of our proven workshops or trainings to bring to your organization.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+        <div class="flex flex-col">
+          <dt class="text-2xl/7 font-semibold text-gray-700">
+            <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-brand-blue-alt">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 18V14M6 14H8L13 17V7L8 10H5C3.89543 10 3 10.8954 3 12V12C3 13.1046 3.89543 14 5 14H6ZM17 7L19 5M17 17L19 19M19 12H21" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </div>
+            The power of your words
+          </dt>
+          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Step into your power and speak with purpose. This workshop is designed to build confidence and expertise in public speaking.</p>
+            <p class="mt-6">
+              <a href="#" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
+            </p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="text-2xl/7 font-semibold text-gray-700">
+            <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-brand-blue-alt">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Project Management Essentials 
+        </dt>
+          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">From chaos to completion, this training walks through different management frameworks and highlights different technologies that aid in project management.</p>
+            <p class="mt-6">
+              <a href="#" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
+            </p>
+          </dd>
+        </div>
+        <div class="flex flex-col">
+          <dt class="text-2xl/7 font-semibold text-gray-700">
+            <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-brand-blue-alt">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+                <path d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            Spam report
+          </dt>
+          <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-600">
+            <p class="flex-auto">Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.</p>
+            <p class="mt-6">
+              <a href="#" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
+            </p>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
 <!-- Clients/Partners Section Start -->
-<section class="py-12 px-4  bg-base-50">
+<section class="py-12 px-4 bg-base-50">
     <div class="max-w-7xl mx-auto text-center">
-        <h2 class="text-xl font-semibold text-gray-500 uppercase tracking-wider mb-10">
+        <h2 class="font-semibold text-gray-500 uppercase tracking-wider mb-10">
             Trusted by Industry Leaders
         </h2>
         
         <!-- Logos Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center max-w-5xl mx-auto">
+        <div class="grid grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center max-w-5xl mx-auto">
             
             <!-- Logo 1 (Placeholder) -->
             <div class="p-4 flex justify-center w-full">
@@ -290,9 +366,9 @@
                 <img src="https://placehold.co/150x50/e0e7ff/4338ca?text=Client+D" alt="Client Logo D" class="h-10 sm:h-12 w-auto opacity-70 hover:opacity-100 transition duration-300 filter grayscale hover:grayscale-0">
             </div>
 
-            <!-- Logo 5 (Placeholder) - Uses sm:col-span-3 to center when in the 3-column layout -->
-            <div class="p-4 flex justify-center w-full sm:col-span-3 lg:col-span-1"> 
-                 <img src="https://placehold.co/150x50/e0e7ff/4338ca?text=Client+E" alt="Client Logo E" class="h-10 sm:h-12 w-auto opacity-70 hover:opacity-100 transition duration-300 filter grayscale hover:grayscale-0">
+            <!-- Logo 4 (Placeholder) -->
+            <div class="p-4 flex justify-center w-full">
+                <img src="https://placehold.co/150x50/e0e7ff/4338ca?text=Client+D" alt="Client Logo D" class="h-10 sm:h-12 w-auto opacity-70 hover:opacity-100 transition duration-300 filter grayscale hover:grayscale-0">
             </div>
         </div>
     </div>
@@ -306,7 +382,7 @@
         //const SUFFIX = " to lead with confidence.";
         const SUFFIX = "";
         // The words to cycle through
-        const WORDS = ['team', 'students', 'employees'];
+        const WORDS = ['_____','team', 'students', 'employees'];
         // The final, static sentence
         const FINAL_SENTENCE = "Empower everyone to lead with confidence.";
         // Animation timing in milliseconds
@@ -315,7 +391,7 @@
         const WORD_PAUSE = 1000;
         const FINAL_PAUSE = 2000;
 
-        let wordIndex = 0;
+        let wordIndex = 1;
         let charIndex = 0;
         let isTyping = true;
         let isFinal = false;
@@ -400,91 +476,69 @@
         // Start the animation when the window loads
         window.onload = function() {
             // Initialize the text to the starting state
-            updateText(PREFIX + WORDS[0] + SUFFIX);
+        updateText(PREFIX + WORDS[0] + SUFFIX);
           updateText(WORDS[0]); 
-            // Set the animation to begin after a brief initial pause
+            //Set the animation to begin after a brief initial pause
             setTimeout(animateLoop, FINAL_PAUSE); 
         };
 
     </script>
     
-<footer class="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
+<footer class="py-16 md:py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
     <div class="max-w-7xl mx-auto">
+
         
-        
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-700 pb-10">
+        <div class="flex md:grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-y-10 gap-x-8 border-t border-gray-200 pt-10">
 
             
-            <div class="col-span-2 md:col-span-1 space-y-4">
-                <div class="text-2xl font-bold text-indigo-400">
-                    Platform X
-                </div>
-                <p class="text-sm text-gray-400">
-                    The modern solution for tomorrow's challenges.
-                </p>
-            </div>
+            <div class="md:col-span-2 lg:col-span-3 space-y-4 flex flex-col items-center">
+            <img src="H.E.R.O-logo-white-background.png" alt="H.E.R.O Consulting Logo" class="w-40">
+                <p class=" hidden md:block text-sm text-gray-500 max-w-xs text-center">
+                Empowered humans create extraordinary outcomes. We ignite potential through insight, guidance, and growth.
+            </p>
+        </div>
 
             
-            <div class="space-y-4">
-                <h3 class="text-lg font-semibold text-white">Product</h3>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Features</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Pricing</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Integrations</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Security</a></li>
+            <div class="md:col-span-1">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">Pages</h3>
+                <ul class="space-y-3 text-gray-600 text-base">
+                    <li><a href="#" class="hover:text-brand-orange transition duration-150">About</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition duration-150">Services</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition duration-150">Resources</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition duration-150">Contact</a></li>
                 </ul>
             </div>
 
             
-            <div class="space-y-4">
-                <h3 class="text-lg font-semibold text-white">Company</h3>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">About Us</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Careers</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Blog</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Contact</a></li>
+            <div class="md:col-span-1">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">Programs</h3>
+                <ul class="space-y-3 text-gray-600 text-base">
+                    <li><a href="#" class="hover:text-brand-orange transition duration-150">Corporations</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition duration-150">Higher Education</a></li>
+                    <li><a href="#" class="hover:text-brand-orange transition duration-150">Individuals</a></li>
                 </ul>
             </div>
 
             
-            <div class="space-y-4">
-                <h3 class="text-lg font-semibold text-white">Resources</h3>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Help Center</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Tutorials</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">API Docs</a></li>
-                    <li><a href="#" class="hover:text-indigo-400 transition duration-150">Support</a></li>
-                </ul>
-            </div>
-            
-             
-            <div class="space-y-4 col-span-2 md:col-span-1">
-                <h3 class="text-lg font-semibold text-white">Follow Us</h3>
-                <div class="flex space-x-4">
-                    
-                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-150">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.02c-4.96.01-8.99-4.02-9-8.98C3.01 5.08 7.04 1.05 12 1.05s8.99 4.03 9 8.98c-.01 4.96-4.04 8.99-9 8.99zm-2-12.5h2v6.5h3v2h-5z"/></svg>
+            <div class="md:col-span-1 text-center">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">Follow Us</h3>
+                <div class="flex md:flex-row space-y-5 md:space-y-0 md:space-x-5">
+                    <a href="https://www.instagram.com/thehero_in_themirror/" aria-label="Instagram">
+                        <img class="w-10 h-10 hover:-translate-y-1 transition duration-150" src="icons8-instagram-50.png">
                     </a>
-                    
-                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-150">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.85.38-1.78.64-2.75.76.98-.59 1.74-1.54 2.09-2.67-.92.55-1.94.95-3.03 1.17C17.75 4.19 15.5 3 13.08 3c-4.14 0-7.5 3.36-7.5 7.5 0 .59.07 1.16.2 1.71-6.23-.31-11.75-3.29-15.45-7.79-.64 1.1-.99 2.38-.99 3.75 0 2.59 1.32 4.88 3.33 6.22-1.21-.04-2.35-.37-3.34-.92v.09c0 3.65 2.59 6.7 6.03 7.42-.63.17-1.29.26-1.97.26-.48 0-.94-.05-1.39-.13 1.1 3.65 4.3 6.31 8.08 6.38-2.58 2.02-5.83 3.23-9.37 3.23-.6 0-1.19-.04-1.78-.11 3.33 2.14 7.28 3.39 11.53 3.39 13.84 0 21.41-11.45 21.41-21.41 0-.33-.01-.66-.04-.98.98-.71 1.83-1.6 2.51-2.61z"/></svg>
+                    <a href="https://open.spotify.com/show/1f9yUvzQSt11cv2ghmtDFT?si=e73bcb5ed703472f" aria-label="Spotify">
+                        <img class="w-10 h-10 hover:-translate-y-1 transition duration-150" src="icons8-spotify-50.png">
                     </a>
-                     
-                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-150">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8 17H5v-7h3v7zm-1.5-8c-.83 0-1.5-.67-1.5-1.5S5.67 6 6.5 6s1.5.67 1.5 1.5S7.33 9 6.5 9zm10 8h-3v-3.5c0-.85.78-1.5 1.5-1.5.82 0 1.5.65 1.5 1.5V17z"/></svg>
+                    <a href="https://www.linkedin.com/company/h-e-r-o-consulting-group-llc/" aria-label="LinkedIn">
+                        <img class="w-10 h-10 hover:-translate-y-1 transition duration-150" src="icons8-linkedin-50.png">
                     </a>
                 </div>
             </div>
 
         </div>
 
-        
-        <div class="mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-            <p>&copy; 2025 Platform X. All rights reserved.</p>
-            <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-indigo-400 transition duration-150">Privacy Policy</a>
-                <a href="#" class="hover:text-indigo-400 transition duration-150">Terms of Service</a>
-            </div>
+        <div class="mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-center text-gray-500">
+            <p>&copy; 2025 H.E.R.O Consulting. All rights reserved.</p>
         </div>
 
     </div>
