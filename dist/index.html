@@ -5,9 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    </style>  
+    
     <style>
         .tinos-regular {
   font-family: "Tinos", serif;
@@ -33,6 +31,10 @@
   font-style: italic;
 }
 
+.felix-titling {
+  font-family: "felix-titling", serif;
+  
+}
     </style>
     <title>H.E.R.O. Consulting Group</title> 
     
@@ -45,41 +47,41 @@
     
 
     
-  <link rel="stylesheet" crossorigin href="/assets/style-BMdyqezx.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-BUFIJwbl.css">
 </head>
 
 <body class="antialiased bg-base-0 font-[Tinos]">
     
-<nav class="bg-gradient-to-br from-brand-blue to-blue-300 text-base-0">
+<nav class="bg-gradient-to-br from-brand-blue to-blue-300 text-base-0 h-48">
     <div class="mx-auto flex items-center justify-between py-2 px-16">
 
         
         <div class="flex items-center gap-3 font-bold tracking-wide">
-            <img src="H.E.R.O-logo-white-background.png" class="w-18 lg:w-1/4 ml-4">
-            <span class="text-xl md:text-2xl font-[Tinos] leading-tight">
-                H.E.R.O <br>
+            <img src="H.E.R.O-logo-white-background.png" class="h-16 w-16 md:w-36 md:h-36 ml-4">
+            <span id="nav_title" class="text-lg md:text-5xl font-[felix-titling]">
+                H.E.R.O. <br>
                 <span class="font-bold">Consulting Group</span>
             </span>
         </div>
 
         
-        <div class="hidden md:flex items-center gap-6 lg:gap-10 font-[Tinos] text-lg">
-            <a href="/index.html" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+        <div id="navigation" class="hidden md:flex items-center gap-6 lg:gap-10 font-[Tinos] text-lg">
+            <a href="/index" class="px-3 py-2   rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
                 Home
             </a>
-            <a href="/about.html" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+            <a href="/about" class="px-3 py-2  rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
                 About
             </a>
-            <a href="/programs.html" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+            <a href="/programs" class="px-3 py-2  rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
                 Programs
             </a>
-            <a href="#" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+            <a href="#" class="px-3 py-2 rounded-lg   hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
                 Resources
             </a>
 
             
-            <a href="#"
-               class="ml-4 px-2 lg:px-6 py-2 font-semibold bg-brand-orange text-white rounded-xl shadow-md border-2 border-brand-orange
+            <a href="/contact"
+               class="ml-4 px-2 lg:px-6 py-2 font-semibold bg-brand-orange text-white rounded-xl shadow-md border-t-2 border-yellow-600
                       hover:bg-brand-orange-alt transition duration-300 ease-in-out">
                Contact
             </a>
@@ -133,18 +135,28 @@
 
             <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2 md:pt-4 text-xl">
                 <button class="px-8 py-3 font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-md">
-                    Learn More
+                    <a href="/programs#corporate-programs">Learn More</a>
                 </button>
                 <button class="px-8 py-3 font-semibold text-brand-orange bg-white border border-brand-orange hover:bg-base-100 rounded-xl shadow-sm transition duration-300 ease-in-out">
-                    Contact Us
+                    <a href="/contact">Contact Us</a>
                 </button>
             </div>
         </div>
 
-        <div class="flex-1 w-full mt-6 md:mt-0">
-            <div class="rounded-3xl shadow-2xl">
-                <img src="hero-consulting-new-york-sales-enablement.jpg" class="rounded-lg">
-            </div>
+      <div class="flex-1 w-full mt-6 md:mt-0">
+                <div class="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
+                    <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-100" src="hero-consulting-new-york-sales-enablement.jpg" alt="Mission 1">
+                    <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="fidel-college.jpg" alt="Mission 2">
+                    <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="hong-kong-sales-enablement.png" alt="Mission 3">
+                    <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="fidel-guzman-podcast.jpg" alt="Mission 4">
+                </div>
+
+                <div class="flex justify-center space-x-2 mt-4">
+                    <div class="gallery-dot w-3 h-3 rounded-full bg-brand-orange transition-colors duration-500"></div>
+                    <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+                    <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+                    <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+                </div>
         </div>
 
     </div>
@@ -224,20 +236,35 @@
 <section class="grid grid-cols-1 md:grid-cols-2 md:py-24 px-4 sm:px-6 lg:px-8">
     
         <!-- Main Header: Mission Statement (Big Text) -->
-        <div class="my-4 md:mb-2 text-center text-2xl">
+<div class="my-4 md:mb-2 text-center text-2xl">
     <h2 class="font-bold text-brand-orange uppercase tracking-wider">Our Mission</h2>
-    <p class="px-16 md:px-32 text-gray-800 text-2xl">
+    <p class="px-16 py-8 md:px-32 text-gray-800 text-2xl">
         To empower individuals and organizations to unlock their full potential, build confidence, and strategically optimize resources for sustainable growth and measurable success.
     </p>
-    
-    <img class="rounded-lg mx-auto block w-2/3" src="hong-kong-sales-enablement.png">
+    <!-- <img class="rounded-lg mx-auto block w-2/3" src="hong-kong-sales-enablement.png"> -->
+    <div class="relative w-2/3 mx-auto h-[400px] md:h-[500px]">
+        <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-100" src="hong-kong-sales-enablement.png" alt="Mission 1">
+        <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="fidel-college.jpg" alt="Mission 2">
+        <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="hong-kong-sales-enablement.png" alt="Mission 3">
+        <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="fidel-guzman-podcast.jpg" alt="Mission 4">
+    </div>
+
+    <div class="flex justify-center space-x-2 mt-4">
+        <div class="gallery-dot w-3 h-3 rounded-full bg-brand-orange transition-colors duration-500"></div>
+        <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+        <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+        <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+    </div>
 </div>
         <!-- 4 Values Grid (2x2 on desktop, stacked on mobile) -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
           <h2 class=" font-bold text-brand-orange uppercase tracking-wider mt-4 md:mb-2 text-center md:col-span-2 text-2xl">Our Values</h2> 
             <!-- Value 1: Innovation -->
             <div class="px-6 py-4">
-                <h3 class=" font-bold text-gray-700 text-xl">Empowerment</h3>
+                <h3 class="font-bold text-gray-700 text-xl flex items-center">
+                    <div class="p-1.5 bg-brand-blue-alt rounded-full mr-2 flex-shrink-0">
+                    <img src="power-svgrepo-com.png" class="w-6 h-6"> 
+                    </div>Empowerment</h3>
                 <p class="text-gray-600  mt-2 text-xl">
                      We believe humans already have everything they need to be successful. We help you catalyze that potential.
                 </p>
@@ -245,7 +272,10 @@
 
            
             <div class="px-6 py-4">
-                <h3 class=" font-bold text-gray-700  text-xl">Human Focused</h3>
+                <h3 class="font-bold text-gray-700 text-xl flex items-center">
+                    <div class="p-1.5 bg-brand-blue-alt rounded-full mr-2 flex-shrink-0">
+                    <img src="teacher-svgrepo-com.png" class="w-6 h-6"> 
+                    </div>Human Focused</h3>
                 <p class="text-gray-600  mt-2  text-xl">
                     In a world where it seems technology is taking over, we believe that investing in humans will always win over investing in tools. 
                 </p>
@@ -253,7 +283,10 @@
 
             <!-- Value 3: User Focus -->
             <div class="px-6 py-4">
-                <h3 class=" font-bold text-gray-700  text-xl">Audience Driven</h3>
+                <h3 class="font-bold text-gray-700 text-xl flex items-center">
+                    <div class="p-1.5 bg-brand-blue-alt rounded-full mr-2 flex-shrink-0">
+                    <img src="audience-svgrepo-com.png" class="w-6 h-6"> 
+                    </div>Audience Driven</h3>
                 <p class="text-gray-600  mt-2  text-xl">
                 People are willing to learn and grow given the right environment. Our trainings provide a balance of knowledge and application that inspires personal growth.
             </p>
@@ -261,19 +294,25 @@
 
             <!-- Value 4: Excellence -->
             <div class="px-6 py-4">
-                <h3 class=" font-bold text-gray-700  text-xl">Communication</h3>
-                <p class="text-gray-600  mt-2  text-xl">
-                Problems always arise from miscommunication. Learning how to communicate between coworkers, managers, and teams drive performance and efficiency. 
-            </p>
-            </div>
+                <h3 class="font-bold text-gray-700 text-xl flex items-center">
+                    <div class="p-1.5 bg-brand-blue-alt rounded-full mr-2 flex-shrink-0">
+                    <img src="shake-hands-svgrepo-com.png" class="w-6 h-6"> 
+                    </div>
+        
+                Communication
+            </h3>
+        <p class="text-gray-600 mt-2 text-xl">
+         Problems always arise from miscommunication. Learning how to communicate between coworkers, managers, and teams drive performance and efficiency.
+         </p>
+</div>
         </div>
         <!-- Call to Action (CTA) Buttons -->
             <div class="md:col-start-2 md:col-span-2 flex flex-col sm:flex-row justify-center md:justify-start md:pl-6 gap-4 lg:gap-16 md:gap-64 py-3 md:pt-10 ">
                 <button class="px-8 py-3 font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-lg">
-                    Learn More
+                    <a href="/about#H.E.R.O.-vision">Learn More</a>
                 </button>
                 <button class="px-8 py-3 font-semibold text-brand-orange bg-white border border-brand-orange hover:bg-base-100 rounded-xl shadow-md transition duration-300 ease-in-out">
-                    Contact Us
+                    <a href="/contact">Contact Us</a>
                 </button>
             </div>
 </section>
@@ -286,51 +325,38 @@
       <h2 class="font-semibold tracking-tight text-pretty text-gray-700 text-5xl">Impact Programs</h2>
       <p class="mt-6 text-lg/8 text-gray-600">Choose one of our proven workshops or trainings to bring to your organization.</p>
     </div>
-    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+    <div class="mx-auto mt-8 max-w-2xl lg:mt-8 lg:max-w-none">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
         <div class="flex flex-col">
           <dt class="text-2xl/7 font-semibold text-gray-700">
-            <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-brand-blue-alt">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 18V14M6 14H8L13 17V7L8 10H5C3.89543 10 3 10.8954 3 12V12C3 13.1046 3.89543 14 5 14H6ZM17 7L19 5M17 17L19 19M19 12H21" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            </div>
             The power of your words
           </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-600">
             <p class="flex-auto">Step into your power and speak with purpose. This workshop is designed to build confidence and expertise in public speaking.</p>
-            <p class="mt-6">
-              <a href="#" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
+            <p class="mt-3 md:mt-6">
+              <a href="/programs#higher-education-programs" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
             </p>
           </dd>
         </div>
         <div class="flex flex-col">
           <dt class="text-2xl/7 font-semibold text-gray-700">
-            <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-brand-blue-alt">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
-                <path d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
             Project Management Essentials 
         </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-600">
             <p class="flex-auto">From chaos to completion, this training walks through different management frameworks and highlights different technologies that aid in project management.</p>
-            <p class="mt-6">
-              <a href="#" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
+            <p class="mt-3 md:mt-6">
+              <a href="/programs#corporate-programs" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
             </p>
           </dd>
         </div>
         <div class="flex flex-col">
           <dt class="text-2xl/7 font-semibold text-gray-700">
-            <div class="mb-6 flex size-10 items-center justify-center rounded-lg bg-brand-blue-alt">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
-                <path d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            Spam report
-          </dt>
+        Emotional Intelligence in Sales   
+       </dt>
           <dd class="mt-1 flex flex-auto flex-col text-base/7 text-gray-600">
-            <p class="flex-auto">Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.</p>
-            <p class="mt-6">
-              <a href="#" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
+            <p class="flex-auto">This training teaches you how to identify potential buisness prospects and craft compelling value propositions. Once you have built a foundation of trust, then you ask for the sale.</p>
+            <p class="mt-3 md:mt-6">
+              <a href="/programs#individual-programs" class="text-lg/6 font-semibold text-brand-orange hover:text-brand-orange-alt">Learn more <span aria-hidden="true">→</span></a>
             </p>
           </dd>
         </div>
@@ -489,6 +515,37 @@
         };
 
     </script>
+    <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.gallery-item');
+    const dots = document.querySelectorAll('.gallery-dot');
+    const totalImages = images.length;
+
+    function showNextImage() {
+        // Hide current image and dim current dot
+        images[currentIndex].classList.replace('opacity-100', 'opacity-0');
+        images[currentIndex + 4].classList.replace('opacity-100', 'opacity-0');
+        dots[currentIndex].classList.replace('bg-brand-orange', 'bg-gray-300');
+        dots[currentIndex+4].classList.replace('bg-brand-orange', 'bg-gray-300');
+
+        // Increment index (loop back to 0)
+        currentIndex = (currentIndex + 1) % (totalImages / 2);
+
+        // Show next image and highlight next dot
+        images[currentIndex].classList.replace('opacity-0', 'opacity-100');
+        images[currentIndex + 4].classList.replace('opacity-0', 'opacity-100'); 
+        dots[currentIndex].classList.replace('bg-gray-300', 'bg-brand-orange');
+        dots[currentIndex+4].classList.replace('bg-gray-300', 'bg-brand-orange');
+    }
+
+    // 1. Wait 5 seconds for other page animations to finish
+    setTimeout(() => {
+        
+        // 2. Start the infinite loop (changing every 5 seconds)
+        setInterval(showNextImage, 4000);
+        
+    }, 9000);
+</script>
     
 <footer class="py-16 md:py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
     <div class="max-w-7xl mx-auto">
@@ -544,14 +601,41 @@
         </div>
 
         <div class="mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-center text-gray-500">
-            <p>&copy; 2025 H.E.R.O Consulting. All rights reserved.</p>
+            <p>&copy; 2025 H.E.R.O. Consulting. All rights reserved.</p>
         </div>
 
     </div>
 </footer>
  
     
-<script></script>
+<script>
+  
+  const currentPath = window.location.pathname;
+  console.log(currentPath + " Current Path")
+
+  
+  
+  const navLinks = document.querySelector('#navigation');
+  const aLinks = navLinks.querySelectorAll('a');
+
+  aLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    console.log(href)
+    
+    
+    const isHome = (currentPath === "/" || currentPath.includes("index.html")) && href.includes("index.html");
+    const isOtherPage = currentPath.includes(href) && href !== "/index.html" && href !== "#";
+    console.log(isOtherPage)
+    if (isHome || isOtherPage) {
+      
+      
+      link.classList.add('border-b-2', 'border-yellow-600', "rounded-t-lg");
+      
+      
+      link.classList.remove('rounded-lg');
+    }
+  });
+</script>
 
 </body>
 </html> 

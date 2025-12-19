@@ -5,9 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    </style>  
+    
     <style>
         .tinos-regular {
   font-family: "Tinos", serif;
@@ -33,6 +31,10 @@
   font-style: italic;
 }
 
+.felix-titling {
+  font-family: "felix-titling", serif;
+  
+}
     </style>
     <title>H.E.R.O. Consulting Group</title> 
     
@@ -50,36 +52,36 @@
 
 <body class="antialiased bg-base-0 font-[Tinos]">
     
-<nav class="bg-gradient-to-br from-brand-blue to-blue-300 text-base-0">
+<nav class="bg-gradient-to-br from-brand-blue to-blue-300 text-base-0 h-48">
     <div class="mx-auto flex items-center justify-between py-2 px-16">
 
         
         <div class="flex items-center gap-3 font-bold tracking-wide">
-            <img src="H.E.R.O-logo-white-background.png" class="w-18 lg:w-1/4 ml-4">
-            <span class="text-xl md:text-2xl font-[Tinos] leading-tight">
-                H.E.R.O <br>
+            <img src="H.E.R.O-logo-white-background.png" class="h-16 w-16 md:w-36 md:h-36 ml-4">
+            <span id="nav_title" class="text-lg md:text-5xl font-[felix-titling]">
+                H.E.R.O. <br>
                 <span class="font-bold">Consulting Group</span>
             </span>
         </div>
 
         
-        <div class="hidden md:flex items-center gap-6 lg:gap-10 font-[Tinos] text-lg">
-            <a href="/index.html" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+        <div id="navigation" class="hidden md:flex items-center gap-6 lg:gap-10 font-[Tinos] text-lg">
+            <a href="/index" class="px-3 py-2   rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
                 Home
             </a>
-            <a href="/about.html" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+            <a href="/about" class="px-3 py-2  rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
                 About
             </a>
-            <a href="/programs.html" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+            <a href="/programs" class="px-3 py-2  rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
                 Programs
             </a>
-            <a href="#" class="px-3 py-2 rounded-lg  hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
+            <a href="#" class="px-3 py-2 rounded-lg   hover:bg-brand-orange hover:shadow-md hover:border-t-2 hover:border-yellow-600">
                 Resources
             </a>
 
             
-            <a href="#"
-               class="ml-4 px-2 lg:px-6 py-2 font-semibold bg-brand-orange text-white rounded-xl shadow-md border-2 border-brand-orange
+            <a href="/contact"
+               class="ml-4 px-2 lg:px-6 py-2 font-semibold bg-brand-orange text-white rounded-xl shadow-md border-t-2 border-yellow-600
                       hover:bg-brand-orange-alt transition duration-300 ease-in-out">
                Contact
             </a>
@@ -129,7 +131,7 @@
             </div>
         </section>
 
-        <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section id="H.E.R.O.-vision" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 
                 <div class="space-y-6">
@@ -142,55 +144,82 @@
                     <p class="text-xl text-gray-800 leading-relaxed">
                         H.E.R.O. was founded to bridge the gap between inherent ability and realized performance. By focusing on communication, leadership development, and intelligent resource optimization, we help organizations build resilient, high-performing cultures.
                     </p>
-                    <a href="#"
+                    <a href="/programs"
                         class="inline-block px-8 py-3 font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-md transition duration-300 ease-in-out">
                         Explore Our Programs
                     </a>
                 </div>
 
-                <div class="rounded-3xl shadow-2xl overflow-hidden">
-                    <img src="fidel-guzman-podcast.jpg" alt="Team collaborating in a modern office" class="w-full">
+                <div class="rounded-xl overflow-hidden">
+                    <!-- <img src="fidel-guzman-podcast.jpg" alt="Team collaborating in a modern office" class="w-full"> -->
+                    <div>
+                     <div class="relative w-full h-[300px] sm:h-[400px] md:h-[450px] overflow-hidden">
+                    <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-100" src="hero-consulting-new-york-sales-enablement.jpg" alt="Mission 1">
+                    <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="fidel-college.jpg" alt="Mission 2">
+                    <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="hong-kong-sales-enablement.png" alt="Mission 3">
+                    <img class="gallery-item absolute inset-0 w-full h-full object-cover rounded-lg transition-opacity duration-1000 opacity-0" src="fidel-guzman-podcast.jpg" alt="Mission 4">
+                     </div>
+                
+                <div class="flex justify-center space-x-2 mt-4">
+                    <div class="gallery-dot w-3 h-3 rounded-full bg-brand-orange transition-colors duration-500"></div>
+                    <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+                    <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+                    <div class="gallery-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500"></div>
+                </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-blue-50">
-            <div class="max-w-7xl mx-auto">
+       <section class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-blue-50">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+            
+            <div class="w-full lg:w-1/3 bg-white rounded-2xl shadow-xl p-8 border border-gray-200 flex flex-col items-center text-center">
+                <div class="w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-brand-orange shadow-lg">
+                    <img src="fidel-guzman-headshot.jpg" alt="Headshot of Fidel Guzman" class="w-full h-full object-cover">
+                </div>
+                
+                <h3 class="font-bold text-3xl text-gray-900 font-[Tinos]">Fidel Guzman, MBA</h3>
+                
+                <div class="mt-6 space-y-4 text-gray-600 text-base w-full">
+                    <p class="font-bold text-brand-blue-alt text-lg">Founder & CEO<br><span class="text-sm font-normal text-gray-500">H.E.R.O. Consulting Group</span></p>
+                    
+                    <ul class="space-y-3 italic border-t border-gray-100 pt-4">
+                        <li>Podcast Host, "The Hero in the Mirror"</li>
+                        <li>VP of Education, Toastmasters America</li>
+                        <li>Manager of Internal Training, ION Group</li>
+                        <li>National Keynote Speaker</li>
+                    </ul>
+                </div>
+            </div>
 
-                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-200">
-                    <div class="flex flex-col md:flex-row items-start gap-10">
-                        
-                        <div class="md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left">
-                            <div class="w-48 h-48 rounded-full overflow-hidden mb-4 border-4 border-brand-orange shadow-lg">
-                                <img src="fidel-guzman-headshot.jpg" alt="Headshot of Fidel Guzman" class="w-full h-full object-cover">
-                            </div>
-                            <h3 class="font-bold text-3xl text-gray-900 font-[Tinos]">Fidel Guzman</h3>
-                            <!--<p class="text-xl font-semibold text-brand-blue-alt mt-1"></p>-->
-                        </div>
-                        
-                        <div class="md:w-2/3 space-y-4 text-lg">
-                            <p class="text-gray-700">
-                                Fidel Guzman is a seasoned Training and Development leader and founder of H.E.R.O. Consulting Group, driven by a deep-seated passion for Human Empowerment. His expertise lies in transforming potential into high-impact performance across the financial technology and services industries.
-                            </p>
-                            
-                            <h4 class="font-bold text-xl text-brand-orange mt-6">A Journey of Voice and Confidence</h4>
-                            <p class="text-gray-700">
-                                Fidel's personal journey—from overcoming a stutter to becoming a prominent public speaker and leader—is the foundation of the H.E.R.O. philosophy. His dedication to organizations like Toastmasters highlights his belief that authenticity boosts confidence, and that everyone deserves to find their voice.
-                            </p>
-                            
-                            <h4 class="font-bold text-xl text-brand-orange mt-6">Expertise in Optimization & Growth</h4>
-                            <ul class="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                                <li>Customized Training & Development: Tailoring approaches to individual needs, a key principle of resource optimization.</li>
-                                <li>Sales Enablement: Providing comprehensive training that drives sustained results beyond onboarding.</li>
-                                <li>Leadership & Management: Building strong, capable leaders who can motivate and guide teams effectively.</li>
-                            </ul>
-
-                        </div>
-
+            <div class="w-full lg:w-2/3 bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-200">
+                <div class="space-y-6 text-lg">
+                    <p class="text-gray-700 leading-relaxed">
+                        Fidel Guzman is a seasoned Training and Development leader and founder of H.E.R.O. Consulting Group, driven by a deep-seated passion for Human Empowerment. His expertise lies in transforming potential into high-impact performance across the sales, financial technology, and services industries.
+                    </p>
+                    
+                    <div>
+                        <h4 class="font-bold text-xl text-brand-orange mb-2">A Journey of Voice and Confidence</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Fidel's personal journey—from overcoming a speach impediment to becoming a prominent public speaker and leader—is the foundation of the H.E.R.O. philosophy. His dedication to organizations like Toastmasters highlights his belief that authenticity boosts confidence, and that everyone deserves to find their voice.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-xl text-brand-orange mb-3">Expertise in Optimization & Growth</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                            <li><span class="font-semibold text-gray-900">Customized Training & Development:</span> Tailoring approaches to individual needs.</li>
+                            <li><span class="font-semibold text-gray-900">Sales Enablement:</span> Providing training that drives sustained results.</li>
+                            <li><span class="font-semibold text-gray-900">Leadership & Management:</span> Building strong, capable leaders.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+
+        </div>
+    </div>
+</section>
 
         <section class="py-16 md:py-20 px-4 sm:px-6 lg:px-8 text-center">
             <div class="max-w-4xl mx-auto">
@@ -201,17 +230,39 @@
                     Partner with H.E.R.O. Consulting to unlock the full potential of your greatest resource—your people.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4 text-xl">
-                    <a href="#" class="px-8 py-3 font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-md">
+                    <a href="/contact" class="px-8 py-3 font-semibold text-white bg-brand-orange hover:bg-brand-orange-alt rounded-xl shadow-md">
                         Get Started Today
                     </a>
-                    <a href="#" class="px-8 py-3 font-semibold text-brand-orange bg-white border border-brand-orange hover:bg-base-100 rounded-xl shadow-sm transition duration-300 ease-in-out">
+                    <a href="/contact" class="px-8 py-3 font-semibold text-brand-orange bg-white border border-brand-orange hover:bg-base-100 rounded-xl shadow-sm transition duration-300 ease-in-out">
                         Schedule a Consultation
                     </a>
                 </div>
             </div>
         </section>
+        <script>
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.gallery-item');
+    const dots = document.querySelectorAll('.gallery-dot');
+    const totalImages = images.length;
 
+    function showNextImage() {
+        // Hide current image and dim current dot
+        images[currentIndex].classList.replace('opacity-100', 'opacity-0');
+        dots[currentIndex].classList.replace('bg-brand-orange', 'bg-gray-300');
+
+        // Increment index (loop back to 0)
+        currentIndex = (currentIndex + 1) % totalImages;
+
+        // Show next image and highlight next dot
+        images[currentIndex].classList.replace('opacity-0', 'opacity-100');
+        dots[currentIndex].classList.replace('bg-gray-300', 'bg-brand-orange');
+    }
+
+    // Change image every 4 seconds
+    setInterval(showNextImage, 4000);
+</script>
     </main>
+    
     
 <footer class="py-16 md:py-16 px-4 sm:px-6 lg:px-8 bg-blue-50">
     <div class="max-w-7xl mx-auto">
@@ -267,14 +318,41 @@
         </div>
 
         <div class="mt-10 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-center text-gray-500">
-            <p>&copy; 2025 H.E.R.O Consulting. All rights reserved.</p>
+            <p>&copy; 2025 H.E.R.O. Consulting. All rights reserved.</p>
         </div>
 
     </div>
 </footer>
  
     
-<script></script>
+<script>
+  
+  const currentPath = window.location.pathname;
+  console.log(currentPath + " Current Path")
+
+  
+  
+  const navLinks = document.querySelector('#navigation');
+  const aLinks = navLinks.querySelectorAll('a');
+
+  aLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    console.log(href)
+    
+    
+    const isHome = (currentPath === "/" || currentPath.includes("index.html")) && href.includes("index.html");
+    const isOtherPage = currentPath.includes(href) && href !== "/index.html" && href !== "#";
+    console.log(isOtherPage)
+    if (isHome || isOtherPage) {
+      
+      
+      link.classList.add('border-b-2', 'border-yellow-600', "rounded-t-lg");
+      
+      
+      link.classList.remove('rounded-lg');
+    }
+  });
+</script>
 
 </body>
 </html> 
