@@ -140,3 +140,173 @@
 #nav_title {
   font-family: 'felix-titling', sans-serif;
 }
+
+/* Form css */
+
+/* --- Global Form Styles --- */
+.jotform-form {
+  padding: 40px 0;
+  background-color: #ffffff; /* --color-base-0 */
+  font-family: 'Tinos', serif;
+  color: hsl(209, 61%, 16%); /* --color-base-1000 */
+}
+
+.form-all {
+  max-width: 752px !important;
+  margin: 0 auto !important;
+  border: 1px solid hsl(212, 33%, 89%); /* --color-base-200 */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* --- Typography & Headers --- */
+.form-header-group {
+  border-bottom: 2px solid hsl(205, 97%, 85%); /* --color-blue-200 */
+  margin: 12px 36px 24px 36px !important;
+  padding: 24px 0 12px 0 !important;
+}
+
+#header_1, #header_3, #header_7 {
+  font-family: 'felix-titling', sans-serif;
+  color: #0d3291; /* --color-brand-blue */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#header_1 { font-size: 32px; } /* text-4xl */
+#header_3, #header_7 { font-size: 20px; } /* text-xl */
+
+.form-label {
+  font-family: 'Tinos', serif;
+  font-weight: 700;
+  font-size: 16px; /* text-base */
+  color: hsl(211, 39%, 23%); /* --color-base-900 */
+  margin-bottom: 8px !important;
+}
+
+.form-sub-label {
+  font-size: 12px; /* text-xs */
+  color: hsl(210, 22%, 49%); /* --color-base-600 */
+  margin-top: 4px;
+}
+
+/* --- Input Fields (Text, Email, Textarea) --- */
+.form-textbox, 
+.form-textarea {
+  width: 100% !important;
+  padding: 10px 12px !important;
+  border: 1px solid hsl(211, 27%, 70%) !important; /* --color-base-400 */
+  border-radius: 4px !important;
+  font-family: 'Tinos', serif !important;
+  font-size: 14px !important; /* text-sm */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-textbox:focus, 
+.form-textarea:focus {
+  outline: none !important;
+  border-color: #284dad !important; /* --color-brand-blue-alt */
+  box-shadow: 0 0 0 3px hsla(205, 65%, 55%, 0.2) !important;
+}
+
+/* Error States */
+.form-line-error {
+  background-color: hsl(360, 100%, 97%) !important; /* --color-red-100 */
+}
+
+.form-error-message {
+  background-color: hsl(360, 67%, 44%) !important; /* --color-red-600 */
+}
+
+/* --- Submit Button --- */
+.form-submit-button {
+  background-color: #0d3291 !important; /* --color-brand-blue */
+  color: #ffffff !important;
+  font-family: 'felix-titling', sans-serif !important;
+  font-size: 18px !important; /* text-lg */
+  padding: 12px 32px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.form-submit-button:hover {
+  background-color: #284dad !important; /* --color-brand-blue-alt */
+}
+
+.form-submit-button:active {
+  background-color: hsl(205, 100%, 21%) !important; /* --color-blue-1000 */
+}
+
+/* --- Layout Adjustments --- */
+.form-line {
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+  margin-bottom: 20px !important;
+}
+
+.form-buttons-wrapper {
+  margin-top: 20px !important;
+  border-top: 1px solid hsl(212, 33%, 89%); /* --color-base-200 */
+  padding-top: 24px !important;
+}
+
+/* Required Star color */
+.form-required {
+  color: hsl(360, 67%, 44%) !important; /* --color-red-600 */
+}
+
+/* --- Error Message Container --- */
+.form-error-message {
+  display: flex;
+  align-items: center;
+  background-color: hsl(360, 67%, 44%) !important; /* --color-red-600 */
+  color: #fff !important;
+  padding: 8px 12px !important;
+  border-radius: 4px !important;
+  font-family: 'Tinos', serif !important;
+  font-size: 14px !important; /* text-sm */
+  margin-top: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* --- Error Icon Styling --- */
+.form-error-message img {
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 10px !important;
+  /* Makes the default icon white to contrast against the red */
+  filter: brightness(0) invert(1); 
+}
+
+/* --- Error Arrow (The little triangle pointing up) --- */
+.form-error-arrow {
+  position: absolute;
+  
+  left: 13px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent !important;
+  border-right: 7px solid transparent !important;
+  border-bottom: 10px solid hsl(360, 67%, 44%) !important; /* --color-red-600 */
+}
+
+.form-error-arrow-inner {
+  display: none !important;
+}
+
+/* --- Highlighting the Input Field on Error --- */
+.form-line-error input.form-textbox, 
+.form-line-error textarea.form-textarea {
+  border: 1px solid hsl(360, 67%, 44%) !important; /* --color-red-600 */
+  background-color: hsl(360, 100%, 97%) !important; /* --color-red-100 */
+}
+
+/* --- Error Text Navigation --- */
+.error-navigation-message {
+  font-weight: 400;
+  line-height: 1.4;
+}
