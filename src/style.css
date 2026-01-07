@@ -154,20 +154,22 @@
 .form-all {
   max-width: 752px !important;
   margin: 0 auto !important;
-  border: 1px solid hsl(212, 33%, 89%); /* --color-base-200 */
+  /*border: 1px solid; /* --color-base-200 */
+  box-shadow: inset;
+  background-color: oklch(97% 0.014 254.604);
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
 }
 
 /* --- Typography & Headers --- */
 .form-header-group {
-  border-bottom: 2px solid hsl(205, 97%, 85%); /* --color-blue-200 */
+  border-bottom: 2px solid hsl(212, 33%, 89%); /* --color-blue-200 */
   margin: 12px 36px 24px 36px !important;
   padding: 24px 0 12px 0 !important;
 }
 
 #header_1, #header_3, #header_7 {
-  font-family: 'felix-titling', sans-serif;
+  font-family: 'Tinos', sans-serif;
   color: #0d3291; /* --color-brand-blue */
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -222,9 +224,9 @@
 .form-submit-button {
   background-color: #0d3291 !important; /* --color-brand-blue */
   color: #ffffff !important;
-  font-family: 'felix-titling', sans-serif !important;
   font-size: 18px !important; /* text-lg */
   padding: 12px 32px !important;
+  margin-bottom: 16px;
   border: none !important;
   border-radius: 4px !important;
   cursor: pointer;
@@ -309,4 +311,45 @@
 .error-navigation-message {
   font-weight: 400;
   line-height: 1.4;
+}
+
+/* --- Bottom Error Navigation Bar --- */
+.error-navigation-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(209, 61%, 16%) !important; /* --color-base-1000 (Dark Slate) */
+  padding: 12px 24px !important;
+  border-radius: 6px !important;
+  margin-top: 20px;
+  border: 1px solid hsl(211, 39%, 23%); /* --color-base-900 */
+}
+
+/* --- Message Text --- */
+.error-navigation-message {
+  font-family: 'Tinos', serif;
+  font-size: 14px; /* text-sm */
+  color: #fff !important;
+  font-weight: 400;
+}
+
+/* --- Navigation Buttons (See Errors / Done) --- */
+.error-navigation-next-button,
+.error-navigation-done-button {
+  background-color: #eb6b10 !important; /* --color-brand-orange */
+  color: #fff !important;
+  font-size: 12px !important; /* text-xs */
+  padding: 6px 16px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.error-navigation-next-button:hover,
+.error-navigation-done-button:hover {
+  background-color: #c15d23 !important; /* --color-brand-orange-alt */
+  transform: translateY(-1px);
 }
